@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alien Shooter Games</title>
+    <link rel="shortcut icon" href="#" />
+    <link rel="stylesheet" href="css/style.css" />
+    <audio id="background-music" autoplay loop>
+      <source src="sounds/backsound.mp3" type="audio/mpeg" />
+      Browser anda tidak mendukung autoplay musik.
+    </audio>
+    <audio id="game-over-sound">
+      <source src="sounds/game-over.wav" type="audio/mpeg" />
+      Browser anda tidak mendukung pemutaran audio.
+    </audio>
+    <audio id="win-sound">
+      <source src="sounds/you-win.wav" type="audio/mpeg" />
+      Browser anda tidak mendukung pemutaran audio.
+    </audio>
+  </head>
+
+  <body>
+    <div id="game-start">
+      <h1>Alien Shooter Games</h1>
+      <div id="cardhome">
+        <h3>Kelompok 3 Paralel D</h3>
+        <h4>22082010156 || Fathimatus Z. N.</h4>
+        <h4>22082010157 || Ganes Dwi Febrianti</h4>
+        <h4>22082010158 || Navy Nurlyn Ajrina</h4>
+      </div>
+      <div class="detail">
+        <h2>Input Your Name</h2>
+        <input type="text" id="player-name" placeholder="Enter your name" />
+        <h2>Select Difficulty Level:</h2>
+        <select id="level-select">
+          <option value="easy">Easy</option>
+          <option value="medium">Medium</option>
+          <option value="hard">Hard</option>
+          <option value="veryhard">Very Hard</option>
+        </select>
+        <br />
+        <button id="start-button">Start</button>
+        <br />
+      </div>
+    </div>
+
+    <div class="konten-game">
+      <div class="konten-kiri">
+        <div class="card">
+          <h3>Selected Level</h3>
+          <div id="showlevel">Level</div>
+        </div>
+        <div class="card">
+          <h3>Skor</h3>
+          <div id="score">0</div>
+        </div>
+      </div>
+      <div class="konten-tengah">
+        <canvas id="game"></canvas>
+        <div id="game-over-message"></div>
+        <script type="module" src="Script.js"></script>
+      </div>
+      <div class="konten-kanan">
+        <button id="back_btn">Back To Home</button>
+      </div>
+    </div>
+  </body>
+</html>

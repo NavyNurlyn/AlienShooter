@@ -1,0 +1,173 @@
+canvas {
+  margin-top: 30px;
+  box-shadow: black 20px 10px 50px;
+}
+
+h1 {
+  margin: 0px;
+  margin-bottom: 10px;
+  font-size: 2.9em;
+  font-family: "Helvetica";
+}
+
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0px;
+  margin: 0px;
+  height: 100vh;
+  background: linear-gradient(0deg, rgb(97, 98, 99) 0%, rgba(0, 0, 0, 0) 100%);
+  background-image: url("../images/landingpage-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+#game-start {
+  width: 92%; /* Mengatur lebar konten */
+  height: 100%;
+  padding: 50px;
+  margin: 0 auto; /* Mengatur margin otomatis agar konten berada di tengah */
+  text-align: center;
+  justify-content: center; /* Mengatur konten ke tengah secara horizontal */
+  background-image: url("../images/landingpage-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+#cardhome {
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 20px;
+  padding : 5px;
+  margin-left: 500px;
+  margin-right: 500px;
+}
+.detail {
+  padding: 10px;
+  text-align: center;
+}
+#game-start h1,
+#game-start h2 {
+  color: white;
+  text-shadow: 2px 2px 4px black; /* Menambahkan bayangan dengan offset (2px horizontal, 2px vertikal) dan radius blur 4px */
+}
+#game-start h2 {
+  font-size: 30px;
+}
+#game-start h3 {
+  font-size: 30px;
+  color: rgb(154, 221, 255);
+  text-shadow: 2px 2px 4px rgb(0, 0, 0); 
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+#game-start h4 {
+  color: white;
+  text-shadow: 2px 2px 4px black; /* Menambahkan bayangan dengan offset (2px horizontal, 2px vertikal) dan radius blur 4px */
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+#game-start .content {
+  text-align: center;
+}
+input,
+select,
+button {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 10px;
+  width: 20%;
+}
+#start-button {
+  width: 20%;
+  color: black;
+  background: linear-gradient(135deg, #ffd700, #ffa500);
+  box-shadow: 0 0 20px rgba(255, 255, 251, 0.952);
+  border: none;
+  text-align: center;
+}
+#start-button:hover {
+  background: #ffab4c;
+  box-shadow: 0 0 10px rgb(192, 197, 255); /* Shadow effect */
+  font-size: 18px; /* Larger font size */
+}
+.konten-kanan button {
+  display: block;
+  margin: 30px auto;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 10px;
+  width: 65%;
+  color: black;
+  background: linear-gradient(135deg, #ffd700, #ffa500);
+  box-shadow: 0 0 10px rgba(255, 238, 1, 0.952);
+  border: none;
+}
+#back_btn:hover{
+  box-shadow: 0 0 10px rgb(238, 255, 0); /* Shadow effect */
+  font-size: 18px; /* Larger font size */
+}
+.card {
+  width: 200px;
+  height: 140px;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(1, 1, 1, 0.2);
+  border-radius: 12px;
+  text-align: center;
+  background-color: #40128b;
+  color: white;
+}
+#score,
+#showlevel {
+  font-size: 30px;
+  color: #000000;
+  background-color: #ffffff;
+  width: 170px; /* lebar yang diinginkan */
+  height: 60px;
+  text-align: center;
+  margin-left: 15px;
+  border-radius: 8px;
+  padding-top: 17px;
+}
+#score{
+  font-size: 40px;
+}
+.konten-game {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 92%;
+  padding: 20px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.konten-kiri {
+  flex: 1;
+  display: flex;
+  flex-direction: column; /* Menjadikan elemen di dalamnya berjejer secara vertikal */
+  align-items: flex-start; /* Menempatkan elemen di sebelah kiri */
+  justify-content: center; /* Menempatkan elemen di sebelah atas */
+}
+.konten-kanan {
+  flex: 1;
+  text-align: right;
+  display: flex;
+  flex-direction: column; /* Menjadikan elemen di dalamnya berjejer secara vertikal */
+  align-items: flex-start; /* Menempatkan elemen di sebelah kiri */
+  justify-content: flex-start; /* Menempatkan elemen di sebelah atas */
+}
+.konten-tengah {
+  flex: 2;
+  text-align: center;
+}
